@@ -1,0 +1,8 @@
+
+SELECT DISTINCT City, StateProvince from SalesLT.Address
+
+SELECT DISTINCT TOP(10)PERCENT Name, Weight from SalesLT.Product WHERE Weight IS NOT NULL
+ORDER BY Weight DESC
+
+SELECT DISTINCT Name, Weight FROM SalesLT.Product ORDER BY Weight DESC
+OFFSET 10 ROWS FETCH NEXT 90 ROWS ONLY;
